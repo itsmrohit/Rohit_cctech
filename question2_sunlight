@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+double first_build_area();
+
+
+int  main()
+{
+double a1=first_build_area();
+cout<<a1<<endl;
+
+}
+
+ double first_build_area()
+{
+int n,i,j,length,breadth;
+cout<<"enter n=";
+cin>>n;
+cout<<"enter i=";
+cin>>i;
+cout<<"enter j=";
+cin>>j;
+int b [1][2]={{1,1}};
+
+int a[i][j];
+int surface_area=0;
+for(int k=0;k<i;++k)
+{
+for(int l=0;l<j;++l)
+{
+cin>>a[k][l];
+}
+}
+for(int k=0;k<i;++k)
+{
+for(int l=0;l<j;++l)
+{
+if(n==1 && (b[0][0]==1 && b[0][1]==1))
+{
+length=a[0][0];
+breadth=a[1][0];
+  surface_area=length+breadth;
+}
+}
+}
+return surface_area;
+}
